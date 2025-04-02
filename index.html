@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quamxnet</title>
+    <link rel="icon" href="uploads/imgs/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* 这个样式会直接添加到HTML中，优先级最高 */
+      .hero-content-block {
+        width: 720px !important;
+        animation: gradientShift 15s ease infinite;
+      }
+    </style>
+</head>
+<body id="home">
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="uploads/imgs/icon.png" alt="ApexFlow Logo" class="logo-img">
+                <span>Quamxnet</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#tokenomics" class="nav-link">Tokenomics</a>
+            </div>
+            <!-- Add hamburger menu button for mobile -->
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="interactive-grid"></div>
+        <div class="hero-container">
+            <div class="hero-content-block">
+                <span class="corner-dot top-left"></span>
+                <span class="corner-dot top-right"></span>
+                <span class="corner-dot bottom-left"></span>
+                <span class="corner-dot bottom-right"></span>
+                <h1 class="gradient-text">Quamxnet</h1>
+                <p class="hero-subtitle">Unleash the full potential of AI & ML with Quamxnet</p>
+
+                <!-- 主 Get Started 按钮 -->
+                <div class="gradient-btn main-btn">
+                    <div class="btn-glow"></div>
+                    <div class="btn-inner" onclick="document.querySelector('#about').scrollIntoView({behavior: 'smooth'})">Get Started</div>
+                </div>
+
+                <!-- 社交按钮组 -->
+                <div class="social-button-group">
+                    <div class="gradient-btn social-btn" onclick="window.open('https://x.com/Quamxnet_', '_blank')">
+                        <div class="btn-glow"></div>
+                        <div class="btn-inner">
+                            <svg class="social-icon" viewBox="0 0 24 24">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                            Twitter
+                        </div>
+                    </div>
+                    <div class="gradient-btn social-btn" onclick="window.open('https://t.me/Quamxnet', '_blank')">
+                        <div class="btn-glow"></div>
+                        <div class="btn-inner">
+                            <svg class="social-icon" viewBox="0 0 24 24">
+                                <path d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12zm-12.43 8.81c-.31 0-.256-.12-.362-.41L9.55 15.38l9.547-5.98" fill="none"/>
+                                <path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"/>
+                            </svg>
+                            Telegram
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-transition"></div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="line-row first-row">
+            <div class="empty-fill-block"></div>
+            <div class="heading-block">
+            </div>
+            <div class="empty-fill-block"></div>
+        </div>
+        <div class="line-row">
+            <div class="empty-fill-block"></div>
+            <div class="logo-block">
+                <span class="corner-dot top-left"></span>
+                <span class="corner-dot top-right"></span>
+                <span class="corner-dot bottom-left"></span>
+                <span class="corner-dot bottom-right"></span>
+                <div class="icon-box">
+                    <div class="card-icon">
+                        <img src="uploads/imgs/icon-white.png" alt="Quamxnet Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="empty-fill-block"></div>
+        </div>
+        <div class="line-row">
+            <div class="empty-fill-block"></div>
+            <div class="about-text-block">
+                <span class="corner-dot top-left"></span>
+                <span class="corner-dot top-right"></span>
+                <span class="corner-dot bottom-left"></span>
+                <span class="corner-dot bottom-right"></span>
+                <p>Welcome to <span class="highlight-text">Quamxnet</span>, a decentralized AI network built for developers, enterprises, and researchers in the AI/ML space. <span class="highlight-text">Powered by Solana</span>, we offer scalable, affordable, and high-performance solutions—from pre-trained models to GPU rentals—designed to transform the way you interact with AI.</p>
+            </div>
+            <div class="empty-fill-block"></div>
+        </div>
+        <div class="section-transition about-transition"></div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="features-glow second-glow"></div>
+        <h2 class="features-heading gradient-text">Why Quamxnet?</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <div class="card-content">
+                    <div class="icon-box">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                <path d="m22.5046 11.6367 -5.9883 -3.5c-0.1594 -0.0933 -0.3381 -0.1387 -0.5164 -0.1367 -0.1699 0.002 -0.3394 0.0474 -0.4915 0.1357l-6.0117 3.5c-0.3076 0.1792 -0.4968 0.5083 -0.4968 0.8643v7c0 0.356 0.1892 0.6851 0.4968 0.8643l6.0117 3.5c0.1555 0.0903 0.3176 0.1357 0.4915 0.1357 0.1743 0 0.3604 -0.0454 0.5164 -0.1367l5.9883 -3.5c0.3069 -0.1792 0.4954 -0.5078 0.4954 -0.8633v-7c0 -0.3555 -0.1885 -0.6841 -0.4954 -0.8633Zm-6.4939 -1.479L20.0183 12.5l-4.0076 2.3423L11.9875 12.5l4.0232 -2.3423ZM11 14.2392l4 2.3291v4.6855l-4 -2.3291v-4.6855Zm6 7.0249v-4.6836l4 -2.3379v4.6836l-4 2.3379Z" fill="currentColor"/>
+                                <path d="M16 1c-0.1741 0 -0.3481 0.0454 -0.5039 0.1362l-12 7C3.189 8.3154 3 8.6443 3 9v14c0 0.3557 0.189 0.6846 0.4961 0.8638l12 7c0.1558 0.0908 0.3298 0.1362 0.5039 0.1362s0.3481 -0.0454 0.5039 -0.1362l11 -6.4166 -1.0078 -1.7275L16 28.8424 5 22.4258V9.5745l11 -6.4168 11 6.4166V17h2V9c0 -0.3557 -0.189 -0.6846 -0.4961 -0.8638l-12 -7C16.3481 1.0454 16.1741 1 16 1Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Solana Decentralization</h3>
+                    <p>Lightning-fast and secure blockchain foundation.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="card-content">
+                    <div class="icon-box">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m17.5858 5 2.5563 -2.55635 1.4142 1.41421L19 6.41421V17h3v2h-3v3h-2V7H9V5h8.5858ZM15 17v2H6c-0.55228 0 -1 -0.4477 -1 -1V7H2V5h3V2h2v15h8ZM9 9h6v6H9V9Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Scalable & Cost-Effective</h3>
+                    <p>AI services designed to grow with your project, without draining your budget.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="card-content">
+                    <div class="icon-box">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m20.0834 10.4999 1.2021 0.7213c0.2368 0.1421 0.3135 0.4492 0.1715 0.686 -0.0423 0.0704 -0.1011 0.1293 -0.1715 0.1715l-9.2854 5.5712 -9.28547 -5.5712c-0.23679 -0.1421 -0.31357 -0.4492 -0.1715 -0.686 0.04223 -0.0704 0.10112 -0.1293 0.1715 -0.1715l1.20209 -0.7213 8.08338 4.85 8.0833 -4.85Zm0 4.7 1.2021 0.7213c0.2368 0.1421 0.3135 0.4492 0.1715 0.686 -0.0423 0.0704 -0.1011 0.1293 -0.1715 0.1715l-8.771 5.2625c-0.3166 0.1901 -0.7123 0.1901 -1.0289 0l-8.77097 -5.2625c-0.23679 -0.1421 -0.31357 -0.4492 -0.1715 -0.686 0.04223 -0.0704 0.10112 -0.1293 0.1715 -0.1715l1.20209 -0.7213 8.08338 4.85 8.0833 -4.85ZM12.5145 1.30864l8.771 5.26256c0.2368 0.14207 0.3135 0.4492 0.1715 0.68599 -0.0423 0.07038 -0.1011 0.12928 -0.1715 0.1715l-9.2854 5.57121 -9.28547 -5.57121c-0.23679 -0.14207 -0.31357 -0.4492 -0.1715 -0.68599 0.04223 -0.07038 0.10112 -0.12927 0.1715 -0.1715l8.77097 -5.26256c0.3166 -0.19 0.7123 -0.19 1.0289 0Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>All-in-One AI Platform</h3>
+                    <p>Tools tailored for various industries—streamlining development and deployment.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="card-content">
+                    <div class="icon-box">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 2h-4V1h-2v1H7C5.34315 2 4 3.34315 4 5v3c0 2.7614 2.23858 5 5 5h6c2.7614 0 5 -2.2386 5 -5V5c0 -1.65685 -1.3431 -3 -3 -3Zm-6 5.5c0 0.82843 -0.6716 1.5 -1.5 1.5C8.67157 9 8 8.32843 8 7.5S8.67157 6 9.5 6c0.8284 0 1.5 0.67157 1.5 1.5Zm5 0c0 0.82843 -0.6716 1.5 -1.5 1.5S13 8.32843 13 7.5 13.6716 6 14.5 6s1.5 0.67157 1.5 1.5ZM4 22c0 -4.4183 3.58172 -8 8 -8 4.4183 0 8 3.5817 8 8H4Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>AI for Everyone</h3>
+                    <p>From researchers to startups, access the power of cutting-edge AI tools and GPUs in a few clicks.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-glow"></div>
+        <h2 class="features-heading gradient-text">Quamxnet Strengths</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <div class="card-content">
+                    <div class="icon-box">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Speed & Affordability</h3>
+                    <p>10x cheaper than traditional cloud services. Say goodbye to "bill shock"!</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="card-content">
+                    <div class="icon-box">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>User-Friendly Tools</h3>
+                    <p>No PhD required. Drag, click, deploy.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="card-content">
+                    <div class="icon-box">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" d="M4.789750000000001 1.917625H1.9166666666666667v2.8730833333333337h2.8730833333333337V1.917625Z"/>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" d="M4.789750000000001 10.064416666666668H1.9166666666666667V12.9375h2.8730833333333337v-2.8730833333333337Z"/>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" d="M19.64391666666667 4.791666666666667v5.273708333333333"/>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" d="M3.354166666666667 4.791666666666667v5.273708333333333"/>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" d="M19.64391666666667 12.939416666666668v5.27275"/>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" d="M3.354166666666667 12.939416666666668v5.27275"/>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" d="M4.790708333333333 19.64775h5.270833333333334"/>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" d="M4.790708333333333 3.357041666666667h5.270833333333334"/>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" d="M12.935583333333334 19.644875h5.270833333333334"/>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" d="M12.935583333333334 3.355125h5.270833333333334"/>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" d="M4.789750000000001 18.20929166666667H1.9166666666666667v2.8730833333333337h2.8730833333333337v-2.8730833333333337Z"/>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" d="M21.080458333333333 1.9185833333333333H18.208333333333336V4.791666666666667h2.8730833333333337V1.9185833333333333Z"/>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" d="M12.934625 1.9166666666666667H10.0625v2.8730833333333337h2.8730833333333337V1.9166666666666667Z"/>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" d="M21.080458333333333 10.065375000000001H18.208333333333336V12.9375h2.8730833333333337v-2.8730833333333337Z"/>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" d="M21.080458333333333 18.21025H18.208333333333336V21.083333333333336h2.8730833333333337v-2.8730833333333337Z"/>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" d="M12.934625 18.208333333333336H10.0625v2.8730833333333337h2.8730833333333337V18.208333333333336Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Decentralized Power</h3>
+                    <p>Rent global GPUs securely—no middleman, no markup.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="card-content">
+                    <div class="icon-box">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="currentColor">
+                                <path d="M2 40v-8c0 -0.9667 0.34167 -1.7917 1.025 -2.475S4.53333 28.5 5.5 28.5h7.05c0.5667 0 1.1083 0.1417 1.625 0.425 0.5167 0.2833 0.9583 0.675 1.325 1.175 0.9667 1.4 2.2 2.4833 3.7 3.25 1.5 0.7667 3.1 1.15 4.8 1.15 1.7 0 3.3 -0.3833 4.8 -1.15 1.5 -0.7667 2.75 -1.85 3.75 -3.25 0.3667 -0.5 0.8 -0.8917 1.3 -1.175s1.0333 -0.425 1.6 -0.425h7.05c0.9667 0 1.7917 0.3417 2.475 1.025C45.6583 30.2083 46 31.0333 46 32v8H33v-5.95c-1.2 1.1 -2.575 1.95 -4.125 2.55 -1.55 0.6 -3.175 0.9 -4.875 0.9 -1.7 0 -3.3167 -0.3 -4.85 -0.9 -1.5333 -0.6 -2.9167 -1.45 -4.15 -2.55V40H2Zm22 -8.5c-1.1667 0 -2.2917 -0.275 -3.375 -0.825 -1.0833 -0.55 -1.9583 -1.3083 -2.625 -2.275 -0.5333 -0.7667 -1.175 -1.3833 -1.925 -1.85 -0.75 -0.4667 -1.5583 -0.7833 -2.425 -0.95 0.9667 -1 2.4833 -1.7667 4.55 -2.3 2.0667 -0.5333 4 -0.8 5.8 -0.8 1.8 0 3.7417 0.2667 5.825 0.8 2.0833 0.5333 3.6083 1.3 4.575 2.3 -0.8667 0.1667 -1.675 0.4833 -2.425 0.95 -0.75 0.4667 -1.3917 1.0833 -1.925 1.85 -0.6667 0.9667 -1.5417 1.725 -2.625 2.275 -1.0833 0.55 -2.225 0.825 -3.425 0.825ZM8 25c-1.5 0 -2.79167 -0.5417 -3.875 -1.625C3.04167 22.2917 2.5 21 2.5 19.5c0 -1.5333 0.54167 -2.8333 1.625 -3.9C5.20833 14.5333 6.5 14 8 14c1.53333 0 2.8333 0.5333 3.9 1.6s1.6 2.3667 1.6 3.9c0 1.5 -0.5333 2.7917 -1.6 3.875S9.53333 25 8 25Zm32 0c-1.5 0 -2.7917 -0.5417 -3.875 -1.625S34.5 21 34.5 19.5c0 -1.5333 0.5417 -2.8333 1.625 -3.9S38.5 14 40 14c1.5333 0 2.8333 0.5333 3.9 1.6s1.6 2.3667 1.6 3.9c0 1.5 -0.5333 2.7917 -1.6 3.875S41.5333 25 40 25Zm-16 -6c-1.5 0 -2.7917 -0.5417 -3.875 -1.625S18.5 15 18.5 13.5c0 -1.5333 0.5417 -2.8333 1.625 -3.9C21.2083 8.53333 22.5 8 24 8c1.5333 0 2.8333 0.53333 3.9 1.6 1.0667 1.0667 1.6 2.3667 1.6 3.9 0 1.5 -0.5333 2.7917 -1.6 3.875S25.5333 19 24 19Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Community-Driven Innovation</h3>
+                    <p>Stake QxN tokens, vote on upgrades, and shape the network.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tokenomics" class="tokenomics">
+        <div class="section-transition"></div>
+        <div class="line-row">
+            <div class="empty-fill-block"></div>
+            <div class="heading-block tokenomics-heading-block">
+                <span class="corner-dot bottom-left"></span>
+                <span class="corner-dot bottom-right"></span>
+                <h2 class="gradient-text tokenomics-heading">$QxN</h2>
+            </div>
+            <div class="empty-fill-block"></div>
+        </div>
+        
+        <div class="line-row">
+            <div class="empty-fill-block"></div>
+            <div class="tokenomics-stats-block">
+                <span class="corner-dot top-left"></span>
+                <span class="corner-dot top-right"></span>
+                <span class="corner-dot bottom-left"></span>
+                <span class="corner-dot bottom-right"></span>
+                <div class="stats-row">
+                    <div class="stats-item">
+                        <div class="stats-label">Total Supply:</div>
+                        <div class="stats-value">1,000,000,000</div>
+                    </div>
+                    <div class="stats-item">
+                        <div class="stats-label">Tax:</div>
+                        <div class="stats-value">0%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="empty-fill-block"></div>
+        </div>
+        
+        <div class="line-row">
+            <div class="empty-fill-block"></div>
+            <div class="tokenomics-text-block">
+                <span class="corner-dot top-left"></span>
+                <span class="corner-dot top-right"></span>
+                <span class="corner-dot bottom-left"></span>
+                <span class="corner-dot bottom-right"></span>
+                <h3 class="gradient-text">Quamxnet Services</h3>
+                <ul class="tokenomics-list">
+                    <li><strong>GPU Rental:</strong> Flexible, pay-as-you-go high-performance GPU computing sourced from top providers. Optimal balance of price, power, and availability.</li>
+                    <li><strong>Private VPN:</strong> Fully customizable VPN experience for privacy-conscious users. Choose your region and server with ease.</li>
+                    <li><strong>Terminal Creator:</strong> Host web terminals with AI agents. Watch, interact, and share conversations. Token linking and Twitter scheduling included.</li>
+                    <li><strong>AI Wallet (OctoWallet):</strong> Your smart assistant for managing Solana assets. Whether you're a DeFi pro or just getting started, OctoWallet makes it seamless.</li>
+                    <li><strong>AI Project Tools (OctoTools):</strong> Boost your crypto project's visibility with customizable bots, instant site generators, PFP creators, and more.</li>
+                    <li><strong>GPU Cloud Gaming:</strong> Game anywhere, anytime. Launch powerful cloud GPUs and enjoy lag-free gaming—even on low-end devices.</li>
+                </ul>
+                <div class="text-button-container">
+                    <a class="text-cta-button">Dextools</a>
+                </div>
+            </div>
+            <div class="empty-fill-block"></div>
+        </div>
+    </section>
+
+  
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo-container">
+                    <div class="footer-logo">
+                        <img src="uploads/imgs/icon.png" alt="ApexFlow Logo" class="footer-logo-img">
+                        <span>Quamxnet</span>
+                    </div>
+                    <div class="copyright">
+                        © 2025 Quamxnet. All rights reserved.
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#tokenomics">Tokenomics</a></li>
+                        </ul>
+                    </div>
+                   
+                    <div class="footer-links-column">
+                        <h3>Join Us</h3>
+                        <ul>
+                            <li><a href="https://x.com/Quamxnet_" target="_blank">Twitter</a></li>
+                            <li><a href="https://t.me/Quamxnet" target="_blank">Telegram</a></li>
+                            <li><a href="#" target="_blank">Dextools</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
